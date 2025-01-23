@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "sirisha1918/taskmanagement-app"
+        DOCKER_IMAGE = "siribadiya/taskmanagement-app"
         DOCKER_TAG = "latest"
     }
 
