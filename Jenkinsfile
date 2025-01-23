@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "{Your-Docker-credential}/taskmanagement-app"
+        DOCKER_IMAGE = "sirisha1918/taskmanagement-app"
         DOCKER_TAG = "latest"
     }
 
@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo "Cloning the repository..."
-                git branch: '{master/main}', url: '{Your-gitrepo-link}'
+                git branch: 'master', url: 'https://github.com/sirisha1918/taskmanagement-app'
             }
         }
 
